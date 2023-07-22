@@ -133,8 +133,8 @@ main > picture, img {
 }
 
 iframe {
-    width: 1115px;
-    height: 627px;
+    width: 50vw;
+    height: 50vh;
     margin: 0px;
     padding: 20px;
 }
@@ -174,16 +174,18 @@ footer {
     background-color: #1A5C38;
     color: white;
     text-align: center;
-    padding: 7px;
+    padding: 1px;
     font-size: 13px;
     margin-top: 10px;
-}
-
-footer > p {
     margin: 0px;
-
 }
 
-footer > p > strong:hover {
+footer > p > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+footer > p > a:hover {
     text-decoration: underline;
 }
