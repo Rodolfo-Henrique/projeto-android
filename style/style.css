@@ -19,7 +19,6 @@ header {
     background-image: linear-gradient(to bottom, #37C374, #1A5C38);
     color: white;
     margin: auto;
-    height: 203px;
 }
 
 header > h1 {
@@ -40,56 +39,53 @@ header > p {
     padding: 10px;
 }
 
-div {
-    width: 100px;
-    margin: 0px;
+header > div {
+    display: inline-block;
 }
 
-div > p {
+header > div > p {
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
     margin: 0px 10px;
     font-weight: bolder;
-    display: inline-block;
 }
 
-div > p:hover {
+header > div > p:hover {
     background-color: #53be82;
     border-radius: 5px;
     color: #1A5C38;
     transition-duration: 0.5s;
 }
 
-div:hover > nav {
+header > div:hover > nav {
     display: block;
-    background-color: #84E1AD;
+    background-color: #1c7a45;
 }
 
 nav {
     padding: 10px;
     display: none;
-    width: 120px;
     background-color: #84E1AD;
 }
 
 nav > a {
     padding: 10px;
-    color: #1A5C38;
+    color: white;
     transition-duration: 0.5s;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin: 5px 0px;
     text-decoration: none;
     font-size: 1em;
-    flex-wrap: wrap;
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
 }
 
 header a:hover {
-    background-color: #1A5C38;
+    background-color: #53be82;
     border-radius: 5px;
-    color: white;
+    color: #1A5C38;
 }
 
 main {
