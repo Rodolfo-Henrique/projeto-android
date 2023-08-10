@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Desafio 03</title>
 </head>
 
@@ -13,13 +14,15 @@
         <h1>CURIOSIDADES DE TECNOLOGIA</h1>
         <p>Tudo aquilo que você sempre quis saber sobre o mundo <br> Tech, em um único lugar</p>
         <div>
-            <p>Menu</p>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Notícias</a>
-                <a href="#">Curiosidades</a>
-                <a href="#">Contato</a>
-            </nav>
+            <span class="material-icons" id="icon" onclick="clickMenu()">menu</span>
+            <menu id="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Curiosidades</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </menu>
         </div>
     </header>
 
@@ -82,5 +85,15 @@
     <footer>
         <p>Site criado por <a href="https://github.com/Rodolfo-Henrique" target="_blank">Rodolfo Henrique</a> projeto do <a href="#">CursoemVideo</a>.</p>
     </footer>
+    <script>
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            }
+            else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
